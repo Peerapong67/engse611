@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basic Lab</title>
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        div.relative {
+            display: block;
+            position: relative;
+            top: 600px;
+            margin: 0;
+            padding: 0;
+            color: #000;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+        }
+
+        nav {
+            width: 200px;
+            background-color: #ffbc61;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            height: 100vh;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #ffbc61;
+        }
+
+        nav li a {
+            display: block;
+            color: #c07a19;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: #C16E00;
+            color: #ffbc61;
+
+        }
+
+        nav a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            margin: 10px 0;
+        }
+
+        nav a:hover {
+            color: #ff9000;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #ff9000;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f4f4f4;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+            <a href="/lab3/part3/about.html" class="button">About Me</a>
+                    <ol>
+                        <li><a href="/lab3/part3/about1.html" class="button">สิ่งที่ชอบ</a></li>
+                        <li><a href="/lab3/part3/about2.html" class="button">กิจวัตรประจำวัน</a></li>
+                        <li><a href="/lab3/part3/about3.html" class="button">นิสัย</a></li>
+                    </ol>
+            </li>
+            <li><a href="/lab3/part3/mycay.html" class="button">My Cat</a></li>
+            <li><a href="/lab3/part3/hobby.html" class="button">My Hobby</a></li>
+            <li><div class="relative"><a href="/lab3/part3/index.html" class="button">Back To Home</a></div></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>นิสัย</h1>
+    <ol>
+        <li>ขี้อ้อน</li>
+        <li>เที่ยวเล่นบ่อย</li>
+        <li>หลับเป็นกิจวัตร</li>
+        
+    </ol>
+    </main>
+    <footer>
+        <p>Contact me: <a href="example@example.com">example@example.com</a></p>
+        <p>Follow me on:<a href="twitter.com">twitter</a> | <a href="Facebook.com">Facebook</a> | <a
+                href="Linkedin.com">Linkedin</a></p>
+        <p>&#169 2024 My lab</p>
+    </footer>
+</body>
+
+</html>
