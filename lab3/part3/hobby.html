@@ -4,21 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Basic Lab</title>
+    <title>Hobby</title>
     <style>
+        .button1 {
+            background-color: #ffbc61;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.2s;
+            cursor: pointer;
+        }
+        .button1:hover{
+            background-color: #C16E00;
+            color:white
+        }
+
         img {
             display: block;
             margin-left: auto;
             margin-right: auto;
-        }
-
-        div.relative {
-            display: block;
-            position: relative;
-            top: 200px;
-            margin: 0;
-            padding: 0;
-            color: #000;
         }
 
         body {
@@ -99,15 +108,16 @@
 <body>
     <nav>
         <ul>
-            <li><a href="about.html" class="button">About Me</a></li>
-            <li><a href="mycay.html" class="button">My Cat</a></li>
-            <li><a href="hobby.html" class="button">My Hobby</a></li>
-            <li><div class="relative"><a href="/lab3/part3/index.html" class="button">Back To Home</a></div></li>
+            <li><a href="/lab3/part3/index.html" class="button">Home</a></li>
+            <li><a href="/lab3/part3/about.html" class="button">About Me</a></li>
+            <li><a href="/lab3/part3/mycat.html" class="button">My Cat</a></li>
+            <li><a href="/lab3/part3/hobby.html" class="button">My Hobby</a></li>
         </ul>
     </nav>
     <main>
         <h1>My Hobby</h1>
     <p>ง่านอดิเรกของฉันคือการ ปืนต้นไม้ นอน เดินเล่นกับทาส กินอาหารจุก ๆ บ้างครั้งก็หนีเที่ยวบ้างเป็นสีสัน ^_^</p>
+    <a href="/lab3/part3/index.html" class="button1">กลับหน้าหลัก</a>
     </main>
     <footer>
         <p>Contact me: <a href="example@example.com">example@example.com</a></p>

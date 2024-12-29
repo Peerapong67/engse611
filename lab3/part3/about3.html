@@ -4,21 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Basic Lab</title>
+    <title>นิสัย</title>
     <style>
+        .button1 {
+            background-color: #ffbc61;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.2s;
+            cursor: pointer;
+        }
+
+        .button1:hover {
+            background-color: #C16E00;
+            color: white
+        }
+
+        .button2 {
+            background-color: #ffbc61;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button2:hover {
+            background-color: #C16E00;
+            color: white
+        }
+
+
         img {
             display: block;
             margin-left: auto;
             margin-right: auto;
-        }
-
-        div.relative {
-            display: block;
-            position: relative;
-            top: 600px;
-            margin: 0;
-            padding: 0;
-            color: #000;
         }
 
         body {
@@ -99,27 +129,21 @@
 <body>
     <nav>
         <ul>
-            <li>
-            <a href="/lab3/part3/about.html" class="button">About Me</a>
-                    <ol>
-                        <li><a href="/lab3/part3/about1.html" class="button">สิ่งที่ชอบ</a></li>
-                        <li><a href="/lab3/part3/about2.html" class="button">กิจวัตรประจำวัน</a></li>
-                        <li><a href="/lab3/part3/about3.html" class="button">นิสัย</a></li>
-                    </ol>
-            </li>
-            <li><a href="/lab3/part3/mycay.html" class="button">My Cat</a></li>
+            <li><a href="/lab3/part3/index.html" class="button">Home</a></li>
+            <li><a href="/lab3/part3/about.html" class="button">About Me</a></li>
+            <li><a href="/lab3/part3/mycat.html" class="button">My Cat</a></li>
             <li><a href="/lab3/part3/hobby.html" class="button">My Hobby</a></li>
-            <li><div class="relative"><a href="/lab3/part3/index.html" class="button">Back To Home</a></div></li>
         </ul>
     </nav>
     <main>
         <h1>นิสัย</h1>
-    <ol>
-        <li>ขี้อ้อน</li>
-        <li>เที่ยวเล่นบ่อย</li>
-        <li>หลับเป็นกิจวัตร</li>
-        
-    </ol>
+        <ol>
+            <li>ขี้อ้อน</li>
+            <li>เที่ยวเล่นบ่อย</li>
+            <li>หลับเป็นกิจวัตร</li>
+        </ol>
+        <a href="/lab3/part3/about2.html" class="button1">หน้าก่อนหน้า</a>
+        <a href="/lab3/part3/index.html" class="button2">กลับหน้าหลัก</a>
     </main>
     <footer>
         <p>Contact me: <a href="example@example.com">example@example.com</a></p>
