@@ -8,7 +8,7 @@ let todos = [];
 function addTodo() {
   //console.log('Hello Guy')
   const todoText = todoInput.value.trim();
-  if (todoText.length > 0) {
+  if (todoText.length > 0 && todoText.length <= 5) {
     const todo = {
       id: Date.now(),
       text: todoText,
@@ -21,6 +21,12 @@ function addTodo() {
 
     renderTodos();
   }
+  else if(todoText.length > 5){
+    alert("Text Must less 5 character");
+  }
+  else{
+    alert("Text is Empty");
+  }
 }
 
 function toggleCompleted(id) {
@@ -28,17 +34,18 @@ function toggleCompleted(id) {
     if (todo.id === id) {
       todo.completed = !todo.completed;
     }
-
     return todo;
   });
-
+  
   renderTodos();
 }
 
 function deletetodo(id) {
-  //console.log(id);
+  const confirmDelete = confirm("Click OK To Delete");
+  if(confirmDelete){
   todos = todos.filter((todo) => todo.id !== id);
   renderTodos();
+  }
 }
 
 function renderTodos() {
@@ -57,7 +64,7 @@ function renderTodos() {
     if (todo.completed) {
       todoItem.classList.add("Completed");
     }
-
+    
     todoItem.addEventListener("click", () => toggleCompleted(todo.id));
 
     todoItem.appendChild(todotext);
@@ -71,5 +78,4 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   addTodo();
 });
-
 renderTodos();
